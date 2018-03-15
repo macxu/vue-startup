@@ -1,0 +1,8 @@
+node_modules
+.idea
+data
+backup
+public
+build
+out
+/static/models

@@ -1,0 +1,44 @@
+{
+    "extends": "tslint:recommended",
+    "rules": {
+        "max-line-length": {
+            "options": [
+                240
+            ]
+        },
+        "ordered-imports": [
+            true,
+            {
+                "grouped-imports": true
+            }
+        ],
+        "radix": false,
+        "no-empty": false,
+        "object-literal-shorthand": false,
+        "no-unused-expression": false,
+        "object-literal-sort-keys": false,
+        // https://palantir.github.io/tslint/rules/member-ordering/
+        "member-ordering": [
+            false,
+            {
+                "order": "fields-first"
+            }
+        ],
+        // https://palantir.github.io/tslint/rules/array-type/
+        "array-type": [
+            true,
+            "array"
+        ],
+        "no-console": false,
+        // https://palantir.github.io/tslint/rules/prefer-const/
+        "prefer-const": false,
+        "eofline": false
+    },
+    "jsRules": {
+        "max-line-length": {
+            "options": [
+                120
+            ]
+        }
+    }
+}
