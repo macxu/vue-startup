@@ -5,8 +5,8 @@ module.exports = (options, req) => {
             'index': './src/index.ts'
         },
         hotReload: true,
-        // 编译结果放到public目录
-        dist: 'public',
+        // 编译结果放到/docs目录，可以直接在Github Pages上看到效果。
+        dist: 'docs',
         // https://github.com/jantimon/html-webpack-plugin
         html: [{
             chunk: 'index',
