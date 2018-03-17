@@ -1,5 +1,5 @@
 # vue-startup
-vue + poi + element-ui= startup example project
+vue + poi + element-ui + typescript = startup example project
 
 ## 准备工作
 

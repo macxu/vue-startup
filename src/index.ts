@@ -6,6 +6,7 @@ import VueRouter from "vue-router";
 import App from "./components/App.vue";
 import OrderListView from "./components/order/OrderListView.vue";
 import UserListView from "./components/user/UserListView.vue";
+import LoginView from "./components/welcome/LoginView.vue";
 import "./index.css";
 import Store from "./models/Store";
 
@@ -17,7 +18,13 @@ Vue.prototype.$store = store;
 
 const routes = [
     {
-        path: "/", component: UserListView,
+        path: "/", component: LoginView,
+        meta: {
+            pageTitle: "欢迎界面",
+        },
+    },
+    {
+        path: "/users", component: UserListView,
         meta: {
             pageTitle: "用户管理",
         },

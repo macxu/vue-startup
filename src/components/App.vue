@@ -19,7 +19,8 @@ export default class App extends Vue {
 <template>
     <div>
         <el-menu :default-active="`/`" mode="horizontal" @select="onSelect" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
-            <el-menu-item index="/">用户管理</el-menu-item>
+            <el-menu-item index="/">欢迎界面</el-menu-item>
+            <el-menu-item index="/users">用户管理</el-menu-item>
             <el-menu-item index="/orders">订单管理</el-menu-item>
             <el-submenu index="2">
                 <template slot="title">我的工作台</template>
@@ -38,7 +39,9 @@ export default class App extends Vue {
                 <a href="https://www.ele.me" target="_blank">其他系统</a>
             </el-menu-item>
         </el-menu>
-        <router-view class="container"></router-view>
+        <div class="container">
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 <style scoped>

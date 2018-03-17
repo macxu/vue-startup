@@ -24,7 +24,7 @@ module.exports = (options, req) => {
         filename: {
             js: 'assets/[name].js',
             css: 'assets/[name].css',
-            // fonts: 'assets/fonts/[name].[ext]',
+            fonts: 'assets/fonts/[name].[ext]',
         },
         // 不用编译的资源放在static目录里面，例如图片
         staticFolder: "static",
