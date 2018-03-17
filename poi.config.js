@@ -12,7 +12,7 @@ module.exports = (options, req) => {
             chunk: 'index',
             filename: 'index.html',
             template: './src/index.ejs',
-            inject: true,
+            inject: false,
             env: {
                 // 让模板能够进行编译环境识别
                 // https://poi.js.org/#/home?id=modes
